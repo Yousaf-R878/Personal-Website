@@ -1,0 +1,320 @@
+:root{
+    --main-color: #314049;
+    --secondary-color: #A9BCD0;
+    --accent-color: #FFDA22;
+}
+
+html{scroll-behavior:smooth}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    text-align: center;
+    padding: none;
+    position: absolute;
+    z-index: 3;
+    left: 36%;
+}
+
+nav ul {
+    list-style: none;
+    height: 0%;
+    opacity: 1;
+}
+
+ul li{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background: none;
+}
+
+ul li a{
+    display: inline-block;
+    font-size: 1.50rem;
+    text-decoration: none;
+    color: black;
+    margin: 15px 15px;
+    padding: 15px 15px;
+    border-radius: 20px;
+    transition: 350ms;
+}
+
+.siteLink:hover{
+    background-color: #f8f8f8;
+    box-shadow: 0 0 2px rgb(178, 212, 221);
+}
+
+
+.me{
+    height: 100vh;;
+    overflow: hidden;
+}
+
+.meImg{
+    width: 140%;
+    object-fit: cover;
+    height: 100%;
+    object-position: 10% 20%;
+    animation: fadeIn 2.5s;
+}
+
+.me div{
+    position: absolute;
+    top: 50%;
+    flex-direction: column;
+}
+
+
+
+.typing-effect{
+    font-size: 4rem;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap; 
+    width: 0;
+    animation: 
+      typing 1.8s steps(18, end) forwards,
+      blink .5s step-end infinite alternate;;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 13.5ch }
+  }
+  @keyframes blink {
+    50% {
+        border-color: transparent
+    }
+  }
+
+h1{
+    /* padding-top: 152%; */
+    padding-left: 15%;
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+.main-about{
+    font-size: 1.40rem;
+    color: black;
+    padding-top: 4%;
+    width: 40%;
+    padding-left: 10%;
+}
+
+.projects-section{
+    background-color: var(--secondary-color);
+    height: 140vh;
+    width: 90%;
+    margin: auto;
+    padding: 20px 75px;
+    max-width: 100%;
+    box-shadow: inset 0px 0px 5px black;
+}
+
+.projects-header{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 40px;
+}
+
+.projects-section div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    column-gap: 50px;
+}
+.projects{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.project{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 400ms;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+
+#Snoops:hover .js{
+    transition: 350ms;
+    color: #FFD600;
+}
+
+#Snoops:hover .mongo{
+    transition: 350ms;
+    color: #00b125;
+}
+
+#Snoops:hover .html{
+    transition: 350ms;
+    color: #ff5800;
+}
+
+#Snoops:hover .css{
+    transition: 350ms;
+    color: #0067fa;
+}
+
+#CPU:hover .pyTop{
+    transition: 350ms;
+    fill: #1d7aac;
+}
+
+#CPU:hover .pyBot{
+    transition: 350ms;
+    fill: #ffd300;
+}
+
+#CPU:hover .front{
+    transition: 350ms;
+    fill: #00d200;
+    color: blue;
+}
+
+#CPU:hover #rect3247{
+    transition: 350ms;
+    fill: blue;
+}
+
+#CPU:hover #rect3249{
+    transition: 350ms;
+    fill: #ffd300;
+}
+
+#Unity:hover .csharp{
+    transition: 350ms;
+    color: #a64397;
+}
+
+#Unity:hover .blenderIn{
+    transition: 350ms;
+    fill: #0059a0;
+}
+
+#Unity:hover .blenderOut{
+    transition: 350ms;
+    fill: #ff6000;
+}
+
+#Artist:hover .pyTop{
+    transition: 350ms;
+    fill: #1d7aac;
+}
+
+#Artist:hover .pyBot{
+    transition: 350ms;
+    fill: #ffd300;
+}
+
+.project:hover{
+    transform: scale(1.02);
+}
+
+.img-div{
+    width: 400px;
+    height: 280px;
+    
+}
+
+.project-img{
+    width: 100%;
+    height: 100%;
+    max-height: 280px;
+}
+
+.proj-Name{
+    background-color: var(--main-color);
+    text-align: center; 
+    padding: 20px 0;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.proj-Tech{
+    background-color: #f8f8f8;
+}
+
+.icon{
+    width: 35px;
+    height: 35px;
+    color: black;
+    transition: 300ms;
+}
+
+/* .icon:hover{
+    color: blue;
+} */
+
+.proj-Tech ul{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.proj-Tech ul li{
+    padding: 20px 15px;
+    display: block;
+}
+
+svg{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.contact{
+    background-color: var(--main-color);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.like-h2{
+    font-size: 2.5rem;
+}
+
+.like-p{
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+.contact:hover{
+    color: white;
+}
+
+.contact-icon:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.contact-icon, .contact{
+    transition: 250ms;
+}
+
+.contact a{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.comeSoon{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
