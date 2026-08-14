@@ -9,7 +9,7 @@ type ExperienceTimelineProps = {
 
 export function ExperienceTimeline({ experience, education }: ExperienceTimelineProps) {
   const [activeId, setActiveId] = useState<string | null>(() => experience[0]?.id ?? null);
-  const [hovering, setHovering] = useState(false);
+  //const [hovering, setHovering] = useState(false);
 
   useEffect(() => {
     // Ensure there's always a sensible fallback when experience changes
