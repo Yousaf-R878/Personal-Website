@@ -9,7 +9,6 @@ type ExperienceTimelineProps = {
 
 export function ExperienceTimeline({ experience, education }: ExperienceTimelineProps) {
   const [activeId, setActiveId] = useState<string | null>(() => experience[0]?.id ?? null);
-  //const [hovering, setHovering] = useState(false);
 
   useEffect(() => {
     // Ensure there's always a sensible fallback when experience changes
@@ -33,11 +32,7 @@ export function ExperienceTimeline({ experience, education }: ExperienceTimeline
                 <TimelineItem
                   key={entry.id}
                   entry={entry}
-                  onActivate={() => {
-                    setActiveId(entry.id);
-                    setHovering(true);
-                  }}
-                  onDeactivate={() => setHovering(false)}
+                  onActivate={() => setActiveId(entry.id)}
                 />
               ))}
             </div>
@@ -101,15 +96,7 @@ export function ExperienceTimeline({ experience, education }: ExperienceTimeline
   );
 }
 
-function TimelineItem({
-  entry,
-  onActivate,
-  onDeactivate,
-}: {
-  entry: ExperienceEntry;
-  onActivate?: () => void;
-  onDeactivate?: () => void;
-}) {
+function TimelineItem({ entry, onActivate }: { entry: ExperienceEntry; onActivate?: () => void }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -129,7 +116,6 @@ function TimelineItem({
         }}
         onMouseLeave={() => {
           setOpen(false);
-          onDeactivate?.();
         }}
         onFocus={() => {
           setOpen(true);
@@ -137,7 +123,6 @@ function TimelineItem({
         }}
         onBlur={() => {
           setOpen(false);
-          onDeactivate?.();
         }}
         tabIndex={0}
         role="button"
