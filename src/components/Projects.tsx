@@ -12,7 +12,11 @@ export function ProjectsSection() {
     >
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} variant={project.status === "in-progress" ? "wip" : "default"} />
+          <ProjectCard
+            key={project.id}
+            project={project}
+            variant={project.status === "in-progress" ? "wip" : "default"}
+          />
         ))}
       </div>
     </Section>

@@ -14,6 +14,24 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "cpu-assembly",
+    title: "CPU and Assembly Language Design",
+    description:
+      "Designed and simulated a custom CPU architecture and assembly language, exploring low-level systems concepts from logic gates to instruction execution.",
+    image: "/images/CPU pic.png",
+    tech: ["Python", "Logisim", "Assembly"],
+    status: "in-progress",
+  },
+  {
+    id: "artist-recommender",
+    title: "Artist Recommender System",
+    description:
+      "Building a recommendation system to suggest artists based on listening patterns and similarity metrics using Python data processing.",
+    image: "/images/MusicRecPic.png",
+    tech: ["Python"],
+    status: "in-progress",
+  },
+  {
     id: "aws-microservices",
     title: "AWS Cloud Migration & Microservices",
     description:
@@ -52,24 +70,6 @@ export const projects: Project[] = [
     href: "https://github.com/Yousaf-R878/Unity-Game-Dev",
     tech: ["C#", "Unity", "Blender"],
     status: "completed",
-  },
-  {
-    id: "cpu-assembly",
-    title: "CPU and Assembly Language Design",
-    description:
-      "Designed and simulated a custom CPU architecture and assembly language, exploring low-level systems concepts from logic gates to instruction execution.",
-    image: "/images/CPU pic.png",
-    tech: ["Python", "Logisim", "Assembly"],
-    status: "in-progress",
-  },
-  {
-    id: "artist-recommender",
-    title: "Artist Recommender System",
-    description:
-      "Building a recommendation system to suggest artists based on listening patterns and similarity metrics using Python data processing.",
-    image: "/images/MusicRecPic.png",
-    tech: ["Python"],
-    status: "in-progress",
   },
 ];
 

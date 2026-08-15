@@ -19,9 +19,11 @@ export function ExperienceSection() {
       title="Experience"
       subtitle="Where I've worked, what I've studied, and the skills I bring to my projects."
     >
+      <div id="work" />
       <ExperienceTimeline experience={experience} education={education} />
 
-      <div className="mt-12">
+      <div id="in-progress" className="mt-12" />
+      <div className="mt-4">
         <ProjectsSection />
       </div>
 

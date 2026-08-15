@@ -18,7 +18,6 @@ function App() {
         />
         <ExperienceSection />
         <ContactSection />
-        <ContactSection />
       </main>
       <Footer />
     </>

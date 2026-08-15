@@ -31,7 +31,7 @@ export const bio = {
   headline: "Hey, I'm Yousaf",
   summary:
     "I'm a software engineering graduate student at Stevens Institute of Technology with experience building full-stack applications, cloud infrastructure, and agentic AI systems.",
-  photo: "/images/selfie.jpeg",
+  photo: "/images/headshot.JPG",
   location: "Staten Island, NY",
 };
 

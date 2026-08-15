@@ -85,7 +85,7 @@ export function Hero({ name, headline, summary, photo }: HeroProps) {
             <img
               src={photo}
               alt={name}
-              className="h-full w-full object-cover object-[10%_20%]"
+              className="h-full w-full scale-[1.08] object-cover object-center"
             />
           </div>
         </div>

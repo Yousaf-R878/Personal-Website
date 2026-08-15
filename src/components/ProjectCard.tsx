@@ -17,9 +17,9 @@ export function ProjectCard({ project, variant = "default" }: ProjectCardProps) 
   const content = (
     <Card
       className={cn(
-        "group h-full overflow-hidden transition-all duration-300",
+        "group h-full overflow-hidden bg-card transition-all duration-300",
         isWip
-          ? "border-dashed bg-muted/20 hover:border-primary/30"
+          ? "border-dashed border-border/70 hover:border-primary/30"
           : "hover:-translate-y-1 hover:border-primary/30 hover:shadow-md",
       )}
     >
@@ -49,7 +49,15 @@ export function ProjectCard({ project, variant = "default" }: ProjectCardProps) 
               <p className="mt-1 text-xs text-muted-foreground">{project.period}</p>
             )}
           </div>
-          {isWip && <Badge variant="outline">In Progress</Badge>}
+          {isWip ? (
+            <Badge variant="secondary" className="whitespace-nowrap text-[10px] leading-none">
+              In progress
+            </Badge>
+          ) : (
+            <Badge variant="muted" className="whitespace-nowrap text-[10px] leading-none">
+              Completed
+            </Badge>
+          )}
         </div>
         <p className="text-sm leading-relaxed text-muted-foreground">{project.description}</p>
         <div className="mt-4 flex flex-wrap gap-2">
