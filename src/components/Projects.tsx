@@ -7,7 +7,7 @@ export function ProjectsSection() {
     <Section
       id="projects"
       title="Projects"
-      subtitle="A single list of projects — each tagged as completed or in progress."
+      // subtitle="A single list of projects — each tagged as completed or in progress."
       className="bg-muted/5"
     >
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

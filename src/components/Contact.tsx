@@ -11,8 +11,8 @@ export function ContactSection() {
     >
       <div className="max-w-xl">
         <p className="text-lg text-[hsl(var(--background)/0.8)]">
-          I'm always open to talking about projects, internships, or collaboration
-          opportunities.
+          I'm always open to talking about projects, opportunities, or 
+          ways to collaborate.
         </p>
         <SocialLinks
           className="mt-8"

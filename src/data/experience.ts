@@ -42,10 +42,10 @@ export const experience: ExperienceEntry[] = [
     organization: "AT&T — Middletown, NJ",
     period: "June 2026 – August 2026",
     summary:
-      "Built an agentic RAG pipeline to automate TN Porting workflows, cutting multi-week processes to hours.",
+      "Built an agentic RAG pipeline to automate TN Porting workflows, cutting multi-week processes to minutes.",
     description: [
       "Architected a multi-agent retrieval-augmented generation (RAG) system integrating AT&T's internal LLM platform with tool-using agents and FastAPI to automate multi-week TN Porting workflows.",
-      "Reduced porting workflow completion time from multiple weeks to hours by designing an end-to-end agentic pipeline that eliminated manual handoffs, cutting employee effort and error rates across the process.",
+      "Reduced porting workflow completion time from multiple weeks to minutes by designing an end-to-end agentic pipeline that eliminated manual handoffs, cutting employee effort and error rates across the process.",
     ],
     tech: ["Python", "FastAPI", "LangChain", "RAG", "LLMs", "Agents"],
   },

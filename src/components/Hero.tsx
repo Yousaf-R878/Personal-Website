@@ -62,9 +62,9 @@ export function Hero({ name, headline, summary, photo }: HeroProps) {
         )}
       >
         <div className="order-2 md:order-1">
-          <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-secondary">
+          {/* <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-secondary">
             Portfolio
-          </p>
+          </p> */}
           <h1 className="font-serif text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
             {headline}
           </h1>
